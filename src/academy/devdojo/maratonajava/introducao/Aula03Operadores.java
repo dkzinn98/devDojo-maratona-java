@@ -58,7 +58,6 @@ public class Aula03Operadores  {
         // quando utiliza o "||" (OU) = se tiver alguma condição true e o resto false, retornará true.
         System.out.println("Playstation aprovado: "+isPlaystationAprovado);
 
-
         // EXERCÍCIO PESSOAL PRÁTICO 3
 
         int idadeDesafioGemini = 27;
@@ -68,7 +67,9 @@ public class Aula03Operadores  {
         double valorDoEmprestimoDesejado = 75000.00;
         double taxaDeJuros = nivelDeEducacao.equals("superior") ? 0.05 : 0.08;
         double valorTotalAPagar = valorDoEmprestimoDesejado * (1 + taxaDeJuros);
-        boolean emprestimoEstudantilPremium = idadeDesafioGemini >= 18 && idadeDesafioGemini <= 30 && rendaMensal >= 1500.00 && possuiCarteiraDeMotorista == true && (nivelDeEducacao.equals("superior") || nivelDeEducacao.equals("medio"));
+        boolean emprestimoEstudantilPremium = idadeDesafioGemini >= 18 && idadeDesafioGemini <= 30
+                && rendaMensal >= 1500.00 && possuiCarteiraDeMotorista == true &&
+                (nivelDeEducacao.equals("superior") || nivelDeEducacao.equals("medio"));
 
         System.out.println("idade: "+idadeDesafioGemini);
         System.out.println("renda mensal: "+rendaMensal);
@@ -79,7 +80,6 @@ public class Aula03Operadores  {
         System.out.println("Valor total a pagar: "+valorTotalAPagar);
 
     }
-
 
 
 }
